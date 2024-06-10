@@ -11,16 +11,21 @@
   }
   .control {
     @include control();
-    padding: 10px 10px 10px 35px;
+    padding: 10px 10px 10px 25px;
+    &::before {
+      content: "\007C";
+      font-size: 16px;
+      padding: 0 10px;
+    }
     .icon-clear {
       padding-right: 0px;
       left: 0;
     }
     .icon-copy {
-      right: 0;
+      right: 5px;
     }
     .icon-filter {
-      right: 23px;
+      right: 42px;
     }
     .level {
       cursor: pointer;
